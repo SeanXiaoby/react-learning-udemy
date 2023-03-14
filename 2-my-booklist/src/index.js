@@ -9,21 +9,18 @@ const BookProps = [
     author: "Benjamin Hall",
     img: "https://images-na.ssl-images-amazon.com/images/I/713F+ivM9NL._AC_UL900_SR900,600_.jpg",
     url: "https://www.amazon.com/Saved-Reporters-Mission-Make-Home/dp/0063309661/ref=zg_bs_books_sccl_1/134-2216578-9998904?psc=1",
-    id: 1,
   },
   {
     title: "Daisy Jones & The Six: A Novel",
     author: "Taylor Jenkins Reid",
     img: "https://images-na.ssl-images-amazon.com/images/I/81a4bSDHqUL._AC_UL900_SR900,600_.jpg",
     url: "https://www.amazon.com/Daisy-Jones-Taylor-Jenkins-Reid/dp/1524798649/ref=zg_bs_books_sccl_5/134-2216578-9998904?psc=1",
-    id: 2,
   },
   {
     title: "Baking Yesteryear: The Best Recipes from the 1900s to the 1980s",
     author: "B. Dylan Hollis",
     img: "https://images-na.ssl-images-amazon.com/images/I/81o-PyNHxbL._AC_UL900_SR900,600_.jpg",
     url: "https://www.amazon.com/Baking-Yesteryear-Recipes-1900s-1980s/dp/0744080045/ref=zg_bs_books_sccl_4/134-2216578-9998904?psc=1",
-    id: 3,
   },
   {
     title: "How to Catch a Leprechaun",
@@ -50,10 +47,10 @@ const Banning = (props) => {
 };
 
 const Book = ({ book, children }) => {
-  const { title, author, img, id } = book;
+  const { title, author, img, url } = book;
   return (
     <article className="book">
-      <a href={book.url} target="_blank">
+      <a href={url} target="_blank" rel="noreferrer">
         <img src={img} alt={title} />
       </a>
 
