@@ -3,37 +3,81 @@ import ReactDOM from "react-dom/client";
 
 import "./index.css";
 
-const BookList = () => {
+const BookProps = [
+  {
+    title: "Saved: A War Reporter's Mission to Make It Home",
+    author: "Benjamin Hall",
+    img: "https://images-na.ssl-images-amazon.com/images/I/713F+ivM9NL._AC_UL900_SR900,600_.jpg",
+    url: "https://www.amazon.com/Saved-Reporters-Mission-Make-Home/dp/0063309661/ref=zg_bs_books_sccl_1/134-2216578-9998904?psc=1",
+    id: 1,
+  },
+  {
+    title: "Daisy Jones & The Six: A Novel",
+    author: "Taylor Jenkins Reid",
+    img: "https://images-na.ssl-images-amazon.com/images/I/81a4bSDHqUL._AC_UL900_SR900,600_.jpg",
+    url: "https://www.amazon.com/Daisy-Jones-Taylor-Jenkins-Reid/dp/1524798649/ref=zg_bs_books_sccl_5/134-2216578-9998904?psc=1",
+    id: 2,
+  },
+  {
+    title: "Baking Yesteryear: The Best Recipes from the 1900s to the 1980s",
+    author: "B. Dylan Hollis",
+    img: "https://images-na.ssl-images-amazon.com/images/I/81o-PyNHxbL._AC_UL900_SR900,600_.jpg",
+    url: "https://www.amazon.com/Baking-Yesteryear-Recipes-1900s-1980s/dp/0744080045/ref=zg_bs_books_sccl_4/134-2216578-9998904?psc=1",
+    id: 3,
+  },
+  {
+    title: "How to Catch a Leprechaun",
+    author: "Adam Wallace",
+    img: "https://images-na.ssl-images-amazon.com/images/I/81hSK0bkkFL._AC_UL900_SR900,600_.jpg",
+    url: "https://www.amazon.com/How-Catch-Leprechaun-Adam-Wallace/dp/1492632910/ref=zg_bs_books_sccl_2/134-2216578-9998904?psc=1",
+  },
+  {
+    title: "Baking Yesteryear: The Best Recipes from the 1900s to the 1980s",
+    author: "B. Dylan Hollis",
+    img: "https://images-na.ssl-images-amazon.com/images/I/81o-PyNHxbL._AC_UL900_SR900,600_.jpg",
+    url: "https://www.amazon.com/Baking-Yesteryear-Recipes-1900s-1980s/dp/0744080045/ref=zg_bs_books_sccl_4/134-2216578-9998904?psc=1",
+  },
+  {
+    title: "It Starts with Us: A Novel (2) (It Ends with Us)",
+    author: "Colleen Hoover",
+    img: "https://images-na.ssl-images-amazon.com/images/I/71PNGYHykrL._AC_UL900_SR900,600_.jpg",
+    url: "https://www.amazon.com/Starts-Us-Novel-Ends/dp/1668001225/ref=zg_bs_books_sccl_9/134-2216578-9998904?psc=1",
+  },
+];
+
+const Banning = (props) => {
+  return <h1 id="banning">{props.title}</h1>;
+};
+
+const Book = ({ book, children }) => {
+  const { title, author, img, id } = book;
   return (
-    <section className="booklist">
-      <Book />
-      <Book />
-      <Book />
-      <Book />
-    </section>
+    <article className="book">
+      <a href={book.url} target="_blank">
+        <img src={img} alt={title} />
+      </a>
+
+      <h2>{title}</h2>
+      <h4>{author}</h4>
+      {children}
+    </article>
   );
 };
 
-const Book = () => {
+const BookList = () => {
   return (
-    <article className="book">
-      <Image />
-      <Title />
-      <Author />
-    </article>
+    <>
+      <Banning title="Best Seller Booklist" />
+
+      <section className="booklist">
+        {BookProps.map((prop) => {
+          return <Book book={prop} />;
+        })}
+      </section>
+    </>
   );
 };
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
-const Image = () => (
-  <img
-    src="./images/book1.jpg"
-    alt="Saved: A War Reporter's Mission to Make It Home"
-  />
-);
-const Title = () => <h2>Saved: A War Reporter's Mission to Make It Home</h2>;
-const Author = () => {
-  return <h4>Benjamin Hall</h4>;
-};
 root.render(<BookList />);
