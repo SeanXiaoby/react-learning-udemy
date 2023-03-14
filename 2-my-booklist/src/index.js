@@ -32,10 +32,10 @@ const BookProps = [
     url: "https://www.amazon.com/How-Catch-Leprechaun-Adam-Wallace/dp/1492632910/ref=zg_bs_books_sccl_2/134-2216578-9998904?psc=1",
   },
   {
-    title: "Baking Yesteryear: The Best Recipes from the 1900s to the 1980s",
-    author: "B. Dylan Hollis",
-    img: "https://images-na.ssl-images-amazon.com/images/I/81o-PyNHxbL._AC_UL900_SR900,600_.jpg",
-    url: "https://www.amazon.com/Baking-Yesteryear-Recipes-1900s-1980s/dp/0744080045/ref=zg_bs_books_sccl_4/134-2216578-9998904?psc=1",
+    title: "The Very Hungry Caterpillar",
+    author: "Eric Carle",
+    img: "https://images-na.ssl-images-amazon.com/images/I/91vnzZO5yPL._AC_UL900_SR900,600_.jpg",
+    url: "https://www.amazon.com/Very-Hungry-Caterpillar-Eric-Carle/dp/0399226907/ref=zg_bs_books_sccl_14/134-2216578-9998904?psc=1",
   },
   {
     title: "It Starts with Us: A Novel (2) (It Ends with Us)",
