@@ -404,6 +404,7 @@ Footer
 ===============
 */
 .footer {
+  position: relative;
   background: var(--clr-grey-1);
   text-align: center;
   padding-left: 2rem;
@@ -557,4 +558,12 @@ Navbar
   .nav-icon:hover {
     color: var(--clr-primary-8);
   }
+}
+
+#egg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: black;
+  font-size: 5px;
 }

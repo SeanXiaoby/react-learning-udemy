@@ -26,6 +26,8 @@ const Footer = () => {
         copyright &copy; Backroads travel tours company
         <span id="date">{new Date().getFullYear()}</span> all rights reserved
       </p>
+
+      <span id="egg">hello from Sean</span>
     </footer>
   );
 };
