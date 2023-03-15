@@ -19,9 +19,15 @@ body {
   gap: 2rem;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1170px) {
   .booklist {
     grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1170px) {
+  .booklist {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -35,6 +41,11 @@ body {
 .book img {
   width: 100%;
   object-fit: cover;
+}
+
+.book a {
+  text-decoration: none;
+  color: #222;
 }
 
 .book h2 {
