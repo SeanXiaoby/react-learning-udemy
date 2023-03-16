@@ -1,4 +1,4 @@
-#<img src='./pubilc/React-icon.png' height = 35px> React.js Projects *from scratch*
+# <img src='./pubilc/React-icon.png' height = 30px> React.js Projects *from scratch*
 
 - **Author:** Boyang Xiao (Sean)
 - **Version:** React 18
