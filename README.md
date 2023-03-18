@@ -31,3 +31,16 @@ Overview:
 - **Repo:** [Project: Backroads-app](https://github.com/SeanXiaoby/react-learning-udemy/tree/main/3-backroads-app)
 
 ---
+
+## Project #3
+
+### Birthday list
+
+Overview:
+
+<a href = 'https://sean-react-birthday-list.netlify.app/'><img src="./pubilc/3-birthday-list-overview.png"> </a>
+
+- **Active site:** [Birthday list: My buddies](https://sean-react-birthday-list.netlify.app/)
+- **Repo:** [Project: Birthday List](https://github.com/SeanXiaoby/react-learning-udemy/tree/main/4-birthday-list)
+
+---
