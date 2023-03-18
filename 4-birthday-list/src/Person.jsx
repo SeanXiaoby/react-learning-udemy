@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 const Person = ({ person, clear }) => {
   const { name, age, image } = person;
