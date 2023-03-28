@@ -5,7 +5,9 @@ const SingleQuestion = ({ id, title, info, activeId, toggleQuestion }) => {
   const isActive = id === activeId;
   //   console.log(activeId);
   return (
-    <article className="question">
+    <article
+      className={isActive ? "question question-down" : "question question-up"}
+    >
       <header>
         <h5>{title}</h5>
         <button
