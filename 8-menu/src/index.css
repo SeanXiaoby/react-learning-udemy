@@ -295,6 +295,11 @@ ul {
 .menu-item {
   background: var(--white);
   border-radius: var(--borderRadius);
+  transition: var(--transition);
+}
+
+.menu-item:hover {
+  box-shadow: var(--shadow-2);
 }
 
 .menu-item .img {
@@ -351,7 +356,7 @@ ul {
 @media screen and (min-width: 992px) {
   .section-center {
     grid-template-columns: 1fr 1fr;
-    align-items: start;
+    /* align-items: start; */
   }
 }
 
